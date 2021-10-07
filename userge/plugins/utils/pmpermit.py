@@ -48,10 +48,10 @@ async def _init() -> None:
         blocked_message = _blockPmMsg.get('data')
 
 
-@userge.on_cmd("allow", about={
+@userge.on_cmd("a", about={
     'header': "allows someone to contact",
     'description': "Ones someone is allowed, "
-                   "Userge will not interfere or handle such private chats",
+                   "Xserge will not interfere or handle such private chats",
     'usage': "{tr}allow [username | userID]\nreply {tr}allow to a message, "
              "do {tr}allow in the private chat"}, allow_channels=False, allow_via_bot=False)
 async def allow(message: Message):
@@ -74,7 +74,7 @@ async def allow(message: Message):
             del_in=3)
 
 
-@userge.on_cmd("nopm", about={
+@userge.on_cmd("npm", about={
     'header': "Activates guarding on inbox",
     'flags': {"-all": "Delete all allowed PM's"},
     'description': "Ones someone is allowed, "
