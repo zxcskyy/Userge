@@ -1,4 +1,4 @@
-""" Userge Voice-Call Plugin """
+""" Xserge Voice-Call Plugin """
 
 # Copyright (C) 2020-2021 by UsergeTeam@Github, < https://github.com/UsergeTeam >.
 #
@@ -308,7 +308,7 @@ async def _help(msg: Message):
         out_str = f"""⚔ <b><u>(<code>{len(cmds)}</code>) Command(s) Available</u></b>
 
 🔧 <b>Plugin:</b>  <code>voice_call</code>
-📘 <b>Doc:</b>  <code>Userge Voice-Call Plugin</code>\n\n"""
+📘 <b>Doc:</b>  <code>Xserge Voice-Call Plugin</code>\n\n"""
         for i, cmd in enumerate(cmds, start=1):
             out_str += (f"    🤖 <b>cmd(<code>{i}</code>):</b>  <code>{cmd.name}</code>\n"
                         f"    📚 <b>info:</b>  <i>{cmd.doc}</i>\n\n")
@@ -492,7 +492,7 @@ async def stop_music(msg: Message):
     await msg.delete()
     await _skip(True)
 
-    await reply_text(msg, "`Stopped Userge-Music.`", del_in=5)
+    await reply_text(msg, "`Succesfuly Stop Xserge-Music.`", del_in=5)
 
 
 @call.on_network_status_changed
