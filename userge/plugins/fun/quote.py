@@ -13,7 +13,7 @@ from pyrogram.errors.exceptions.bad_request_400 import YouBlockedUser
 from userge import userge, Message
 
 
-@userge.on_cmd("quote", about={
+@userge.on_cmd("q", about={
     'header': "Quote a message",
     'usage': "{tr}quote [text or reply to msg]"}, allow_via_bot=False)
 async def quotecmd(message: Message):
