@@ -23,7 +23,6 @@ pybase64
 pyrogram==1.2.9
 pySmartDL
 pysocks
-pytgcalls==2.1.0
 python-dotenv
 pytz
 rarfile
@@ -33,7 +32,6 @@ search-engine-parser
 selenium==3.141.0
 setuptools>=40.3.0
 spamwatch
-speedtest-cli
 stagger
 telegraph
 tgcrypto
